@@ -18,10 +18,11 @@ sections:
           - Graduated Students
           - Visitors
 
-      sort_by: Params.last_name
+      sort_by: Params.weight
       sort_ascending: true
     design:
       show_interests: false
       show_role: true
       show_social: true
+      show_publications: true
 ---

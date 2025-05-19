@@ -101,6 +101,9 @@ features:
     provider: 'mapnik'
     api_key: ''
     zoom: 15
+assets:
+  custom_css:
+    - css/custom.css
 
 # Extensions
 

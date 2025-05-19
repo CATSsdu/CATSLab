@@ -4,40 +4,53 @@ date: 2022-10-24
 
 type: landing
 
+design:
+  class: my-slider
+  is_fullscreen: true
+  loop: false
+  interval: 2000
 sections:
   - block: slider
     content:
       slides:
-      - title: 👋 Welcome to the group
-        content: Take a look at what we're working on...
+      - title: 👋 Welcome to CATS Lab
+        content: Who we are...
         align: center
         background:
           image:
-            filename: coders.jpg
-            filters:
-              brightness: 0.7
-          position: right
-          color: '#666'
-      - title: Lunch & Learn ☕️
-        content: 'Share your knowledge with the group and explore exciting new topics together!'
-        align: left
-        background:
-          image:
-            filename: contact.jpg
+            filename: front.jpg
             filters:
               brightness: 0.7
           position: center
+          color: '#666'
+      - title: Moments
+        align: left
+        gallery:
+          - filename: moment1.jpg
+            class: tall
+          - filename: moment2.jpg
+            class: normal
+          - filename: moment3.jpg
+            class: normal
+          - filename: moment5.jpg
+            class: normal
+          - filename: moment4.jpg
+            class: wide
+
+        background:
+          position: center
           color: '#555'
-      - title: World-Class Semiconductor Lab
-        content: 'Just opened last month!'
+      - title: Join us
+        content: '在自由中研究，在研究中成长'
         align: right
         background:
           image:
-            filename: welcome.jpg
+            filename: front2.jpg
             filters:
               brightness: 0.5
           position: center
           color: '#333'
+        
         link:
           icon: graduation-cap
           icon_pack: fas

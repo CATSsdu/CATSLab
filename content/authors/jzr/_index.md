@@ -1,37 +1,44 @@
 ---
 # Display name
-title: JI Zhuoran 纪卓然
+title: 纪卓然
 
 # Full Name (for SEO)
 first_name: Zhuoran
 last_name: Ji
 
+# Username (this should match the folder name)
+authors:
+  - jzr
+
+# order
+weight: 4
+
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: Assistant Researcher
+role: 助理研究员
 
 # Organizations/Affiliations
 organizations:
-  - name: School of Cyber Science and Technology, Shandong University
+  - name: 山东大学网络空间安全学院
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
 interests:
-  - GPU Algorithm Design
-  - GPU Multitasking System
-  - High Performance Computing
+  - GPU算法设计
+  - GPU多任务系统
+  - 高性能计算
 
 education:
   courses:
-    - course: PhD
-      institution: University of Hong Kong
+    - course: 博士
+      institution: 香港大学
       year: 2022
-    - course: BSc in Computer Science
-      institution: University of Hong Kong
+    - course: 工学学士
+      institution: 香港大学
       year: 2018
 
 # Social/Academic Networking

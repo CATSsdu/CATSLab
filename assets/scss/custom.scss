@@ -1,0 +1,39 @@
+// .my-slider .slider-content {
+//   justify-content: flex-start !important;
+//   padding-top: 12vh;
+// }
+
+/* 只对第二页向上偏移 */
+.carousel-item.move-up1 .wg-hero {
+  margin-top: -5vh; /* 根据需要调整 */
+}
+
+.carousel-item.move-up2 .wg-hero {
+  margin-top: -15vh; /* 根据需要调整 */
+}
+
+.photo-wall {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: 200px 380px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.photo-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.photo-item.tall {
+  grid-row: span 3;  // 占两行
+}
+
+.photo-item.wide {
+  grid-column: span 3;  // 占两列
+}
+
