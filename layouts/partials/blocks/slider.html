@@ -92,6 +92,31 @@
           {{ end }}
         </div>
     </div>
+  <!-- 左侧内容，不受 align 影响 -->
+    {{ with $item.left_info }}
+    <div class="position-absolute text-light" style="
+      top: 20vh;
+      left: 5vw;
+      width: 17vw;
+      z-index: 10;
+      text-align: center;
+    ">
+      <p>{{ . | markdownify }}</p>
+    </div>
+    {{ end }}
+
+    <!-- 右侧内容，不受 align 影响 -->
+    {{ with $item.right_info }}
+    <div class="position-absolute text-light" style="
+      top: 25%;
+      right: 5vw;
+      width: 15vw;
+      z-index: 10;
+      text-align: center;
+    ">
+      <p>{{ . | markdownify }}</p>
+    </div>
+    {{ end }}
   </div>
   {{ end }}
 </div>

@@ -9,16 +9,27 @@ sections:
     content:
       title: Contact
       text: |-
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus augue non tempor egestas. Proin nisl nunc, dignissim in accumsan dapibus, auctor ullamcorper neque. Quisque at elit felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eget elementum odio. Cras interdum eget risus sit amet aliquet. In volutpat, nisl ut fringilla dignissim, arcu nisl suscipit ante, at accumsan sapien nisl eu eros.
+        欢迎报考山东大学网络空间安全学院的研究生和希望参与科研的本科生联系我们！
+
+        招生条件：
+
+          1、身体健康，有运动习惯，身体是革命的本钱。
+
+          2、有一定抗压能力，不惧挑战。
+
+          3、有自主意识，坚持独立思考，希望获得锻炼而非成绩，获得能力而非学历。
+
+          4、拒绝三分钟热度。
+
       email: test@example.org
       phone: 888 888 88 88
       address:
-        street: 450 Serra Mall
-        city: Stanford
-        region: CA
-        postcode: '94305'
-        country: United States
-        country_code: US
+        street: 滨海路72号山东大学K4
+        city: Qingdao
+        region: Shandong Province
+        postcode: '266237'
+        country: China
+        country_code: CN
       coordinates:
         latitude: '37.4275'
         longitude: '-122.1697'
