@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 鞠雷
+title: Lei Ju
 
 # Full name (for SEO)
 first_name: Lei

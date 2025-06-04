@@ -31,7 +31,6 @@
   {{ $order = "order-md-2" }}
 {{ end }}
 
-
 <div class="col-lg-12 mb-5 view-showcase">
   <div class="row align-items-center">
     <div class="col-12 col-md-6">
@@ -56,13 +55,17 @@
       {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
       {{ with $resource }}
-        {{/* Use CSS to expand images to consistent widths rather than just Hugo as Hugo can significantly increase the
-        filesize of GIFs when processing them, e.g. 400kB --> 1.5MB */}}
         {{ $image := . }}
-        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "resize 540x webp" }}{{ end }}
-        {{if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
-          <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-              alt="{{ $item.Title }}" loading="lazy" style="width: 540px; height: auto; object-fit: cover;">
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "resize 1200x webp" }}{{ end }}
+        {{ $image_hd := .Resize "1600x" }}
+        {{ if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
+          <img src="{{ $image.RelPermalink }}" 
+               height="{{ $image.Height }}" 
+               width="{{ $image.Width }}" 
+               alt="{{ $item.Title }}" 
+               loading="lazy" 
+               style="width: 100%; height: auto; object-fit: cover;"
+               srcset="{{ $image.RelPermalink }} 540w, {{ $image_hd.RelPermalink }} 1600w">
         {{if $do_link}}</a>{{end}}
       {{end}}
     </div>

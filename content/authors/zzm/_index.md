@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 周梓梦
+title: Zimeng Zhou
 
 # Full Name (for SEO)
 first_name: Zimeng

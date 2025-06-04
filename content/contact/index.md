@@ -19,25 +19,25 @@ sections:
 
           3、有自主意识，坚持独立思考，希望获得锻炼而非成绩，获得能力而非学历。
 
-          4、拒绝三分钟热度。
+          4、切忌三分钟热度，特别是对于本科生，请在确保学业顺利和充足时间的前提下考虑是否进组。
 
-      email: test@example.org
-      phone: 888 888 88 88
+      email: catslab2019@gmail.com
+      # phone: 888 888 88 88
       address:
         street: 滨海路72号山东大学K4
-        city: Qingdao
-        region: Shandong Province
+        city: 青岛市
+        region: 山东省
         postcode: '266237'
         country: China
         country_code: CN
       coordinates:
-        latitude: '37.4275'
-        longitude: '-122.1697'
-      directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Monday 10:00 to 13:00'
-        - 'Wednesday 09:00 to 10:00'
-      appointment_url: 'https://calendly.com'
+        latitude: '36.364613'
+        longitude: '120.687692'
+      # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+      # office_hours:
+      #   - 'Monday 10:00 to 13:00' 
+      #   - 'Wednesday 09:00 to 10:00'
+      # appointment_url: 'https://calendly.com'
       #contact_links:
       #  - icon: comments
       #    icon_pack: fas
@@ -67,7 +67,7 @@ sections:
       columns: '1'
       background:
         image: 
-          filename: contact.jpg
+          filename: front2.jpg
           filters:
             brightness: 1
           parallax: false

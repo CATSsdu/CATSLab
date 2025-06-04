@@ -76,11 +76,19 @@
   <div class="ml-3">
     {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
     {{ with $resource }}
-      {{ $image := .Resize "150x" }}
-      {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+      {{ $image := .Resize "500x" }} <!-- 默认尺寸 -->
+      {{ $image_hd := .Resize "1000x" }} <!-- 高分辨率版本 -->
+
+      {{ if ne $image.MediaType.SubType "gif" }}
+        {{ $image = $image.Process "webp" }}
+        {{ $image_hd = $image_hd.Process "webp" }} <!-- 处理为WebP格式 -->
+      {{ end }}
+      
       <a href="{{$link}}" {{ $target | safeHTMLAttr }}>
-        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
-            alt="{{ $item.Title }}" loading="lazy">
+        <img src="{{ $image.RelPermalink }}" 
+             height="{{ $image.Height }}" width="{{ $image.Width }}"
+             alt="{{ $item.Title }}" loading="lazy"
+             srcset="{{ $image.RelPermalink }} 500w, {{ $image_hd.RelPermalink }} 1000w">
       </a>
     {{end}}
   </div>

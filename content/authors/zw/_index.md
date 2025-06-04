@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 张伟
+title: Wei Zhang
 
 # Full Name (for SEO)
 first_name: Wei

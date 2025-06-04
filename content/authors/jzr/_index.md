@@ -1,6 +1,6 @@
 ---
 # Display name
-title: 纪卓然
+title: Zhuoran Ji
 
 # Full Name (for SEO)
 first_name: Zhuoran
