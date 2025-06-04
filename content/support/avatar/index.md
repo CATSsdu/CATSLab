@@ -16,7 +16,7 @@ abstract: 基于CatsLab服务器搭建的AI绘图服务，可以为大家生成�
 ## 模型选择
 
 SD以存盘点（checkpoint）来区别生图模型，在ui的左上角可以切换不同模型。
-![checkpoint](/images/sdui-checkpoint.png)
+![checkpoint](./sdui-checkpoint.png)
 目前提供的模型如下：
 ### v1-5-pruned-emaonly
 [SD-1.5](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5)，原生diffusers，生图偏向于现实。
