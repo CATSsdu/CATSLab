@@ -23,7 +23,7 @@ SD以存盘点（checkpoint）来区别生图模型，在ui的左上角可以切
 ### AnythingXL_xl & anything-v5
 [万象熔炉](https://civitai.com/models/9409/or-anything-xl)，前者是一个完全的二次元风格模型，后者产出的效果更写实。
 ### flux1-dev-fp8
-[Black Forest Labs FLUX](https://huggingface.co/black-forest-labs/FLUX.1-dev)，Hugging Face上收藏量第一，下载量仅次于SD-1.5的T2I模型，擅长处理人手、文字。WEBUI似乎不太支持直接使用FLUX，我尝试的时候经常失败，但出图质量确实高。
+[Black Forest FLUX](https://huggingface.co/black-forest-labs/FLUX.1-dev)，Hugging Face上收藏量第一，下载量仅次于SD-1.5的T2I模型，擅长处理人手、文字。WEBUI似乎不太支持直接使用FLUX，我尝试的时候经常失败，但出图质量确实高。
 
 ## Text2Image
 

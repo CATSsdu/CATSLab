@@ -67,7 +67,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Teachers
+  - Principal Investigator
 ---
 
 博士，山东大学网络空间安全学院副院长，教授，博士生导师，泰山学者青年专家，齐鲁青年学者。担任山东省高等学校实验室“EDA数学科学实验室”副主任。研究方向为应用驱动的计算机系统软硬件协同设计、分析与优化方法，具体的研究内容包括面向人工智能与系统安全的领域专用处理器架构与存储系统设计、面向新型计算机体系结构的系统软件研究、以及实时嵌入式系统的设计与分析等。
