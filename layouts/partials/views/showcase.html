@@ -49,26 +49,25 @@
       <div class="btn-links">
         {{ partial "page_links" (dict "page" $item "is_list" 0) }}
       </div>
-    </div>
 
+    </div>
     <div class="col-12 col-md-6 order-first {{$order}}">
       {{ $resource := partial "blox-core/functions/get_featured_image.html" $item }}
 
       {{ with $resource }}
         {{ $image := . }}
-        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "resize 800x webp" }}{{ end }}
+        {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "resize 1200x webp" }}{{ end }}
         {{ $image_hd := .Resize "1600x" }}
-        {{ if $do_link }}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ end }}
-          <img src="{{ $image.RelPermalink }}"
-               height="{{ $image.Height }}"
-               width="{{ $image.Width }}"
-               alt="{{ $item.Title }}"
-               loading="lazy"
-               class="img-fluid mx-auto d-block"
-               style="max-width: 70%; object-fit: contain;"
+        {{ if $do_link}}<a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{end}}
+          <img src="{{ $image.RelPermalink }}" 
+               height="{{ $image.Height }}" 
+               width="{{ $image.Width }}" 
+               alt="{{ $item.Title }}" 
+               loading="lazy" 
+               style="width: 100%; height: auto; object-fit: cover;"
                srcset="{{ $image.RelPermalink }} 540w, {{ $image_hd.RelPermalink }} 1600w">
-        {{ if $do_link }}</a>{{ end }}
-      {{ end }}
+        {{if $do_link}}</a>{{end}}
+      {{end}}
     </div>
   </div>
 </div>
