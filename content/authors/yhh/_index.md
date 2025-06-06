@@ -1,30 +1,45 @@
 ---
 # Display name
-title: Zhiyuan Zhang
+title: Honghui You
 
 # Full name (for SEO)
-first_name: Zhiyuan
-last_name: Zhang
+first_name: Honghui
+last_name: You
 
 # Username (this should match the folder name)
 authors:
-  - zzy
+  - yhh
 
 # order
-weight: 4
+weight: 2
 
 # Is this the primary user of the site?
 superuser: false
 
 # Role/position
-role: 博一
-
-supervisor: jl
+role: 博二
 
 # Organizations/Affiliations
 organizations:
   - name: 山东大学网络空间安全学院
     url: ''
+
+# Short bio (displayed in user profile at end of posts)
+# bio: My research interests include distributed robotics, mobile computing and programmable matter.
+
+# interests:
+#   - 隐私计算
+#   - 计算机体系结构
+#   - 嵌入式系统
+
+# education:
+#   courses:
+#     - course: 博士
+#       institution: 新加坡国立大学
+#       year: 2010
+#     - course: 工学学士
+#       institution: 新加坡国立大学
+#       year: 2005
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons

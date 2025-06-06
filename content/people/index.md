@@ -14,8 +14,8 @@ sections:
           - Principal Investigator
           - Teachers
           - Research Assistants
-          - Master's Students
           - Doctoral Students
+          - Master's Students
           - Graduated Students
           - Visitors
 

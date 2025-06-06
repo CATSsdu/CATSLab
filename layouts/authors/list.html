@@ -19,7 +19,17 @@
       {{ $params := dict "wcPage" $ "wcBlock" . "author" $username }}
       {{ partial $widget $params }}
     {{end}}
-
+    {{ if .Params.supervisor }}
+    {{ $supervisorTerm := site.GetPage (printf "/authors/%s" .Params.supervisor) }}
+  <div class="author-supervisor pb-2">
+    <strong>Supervisor:</strong>
+    {{ if $supervisorTerm }}
+      <a href="{{ $supervisorTerm.RelPermalink }}">{{ $supervisorTerm.Title }}</a>
+    {{ else }}
+      {{ .Params.supervisor }}
+    {{ end }}
+    </div>
+    {{ end }}
     {{ $query := where .Pages ".IsNode" false }}
     {{ $count := len $query }}
     {{ if $count }}
