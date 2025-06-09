@@ -19,6 +19,8 @@ superuser: false
 # Role/position
 role: 博二
 
+supervisor: jl
+
 # Organizations/Affiliations
 organizations:
   - name: 山东大学网络空间安全学院
@@ -27,19 +29,19 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 # bio: My research interests include distributed robotics, mobile computing and programmable matter.
 
-# interests:
-#   - 隐私计算
-#   - 计算机体系结构
-#   - 嵌入式系统
+interests:
+  - 多方安全计算
+  - 计算机体系结构
+  - 间歇计算
 
-# education:
-#   courses:
-#     - course: 博士
-#       institution: 新加坡国立大学
-#       year: 2010
-#     - course: 工学学士
-#       institution: 新加坡国立大学
-#       year: 2005
+education:
+  courses:
+    # - course: 博士
+    #   institution: 新加坡国立大学
+    #   year: 2010
+    - course: 工学学士
+      institution: 中国海洋大学
+      year: 2021
 
 # Social/Academic Networking
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -53,7 +55,7 @@ organizations:
 #   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'shuoxu@mail.sdu.edu.cn'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: false
